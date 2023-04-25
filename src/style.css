@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.opening {
+  background-image: url("./assets/tempbg.png");
+}
+
+.redBorder {
+  border: 1px solid red;
+}
