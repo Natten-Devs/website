@@ -1,11 +1,5 @@
-import Navbar from "./Navbar";
-
 const Opening = () => {
-  return (
-    <div className="opening">
-      <Navbar />
-    </div>
-  );
+  return <div className="opening"></div>;
 };
 
 export default Opening;

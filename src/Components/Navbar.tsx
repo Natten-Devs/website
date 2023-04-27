@@ -2,7 +2,7 @@ import logo from "../assets/logo.png";
 
 const Navbar = () => {
   return (
-    <div className="navBar redBorder">
+    <nav>
       <img src={logo} className="navBarLogo"></img>
       <div className="navBarLinks">
         <a href="index">About</a>
@@ -11,7 +11,7 @@ const Navbar = () => {
         <a href="index">Services</a>
       </div>
       <button className="navBarButton">Contact Us</button>
-    </div>
+    </nav>
   );
 };
 
