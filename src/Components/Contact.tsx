@@ -1,0 +1,66 @@
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+
+const Contact = () => {
+  const form = useRef<HTMLFormElement>(null);
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const isValid = Object.values(form.current).every(
+      (value) => value.length > 0
+    );
+
+    emailjs
+      .sendForm(
+        "service_jda4vjv",
+        "template_87sk7kl",
+        form.current,
+        "zjXJSCfTtJDKebygn"
+      )
+      .then(
+        (result: emailjs.EmailJSResponseStatus) => {
+          console.log(result.text);
+          if (form.current !== null) {
+            form.current.reset();
+          }
+          alert("Message sent successfully.");
+        },
+        (error: emailjs.Error) => {
+          console.log(error.text);
+          alert(
+            "There was an error sending your message. Please try again later."
+          );
+        }
+      );
+  };
+
+  return (
+    <div className="contact">
+      <h1 id="contactSection">Contact Us</h1>
+      <form ref={form} onSubmit={sendEmail}>
+        <div>
+          <input
+            className="textinput"
+            type="text"
+            name="from_name"
+            placeholder="Name"
+            required
+          />
+          <input
+            className="textinput"
+            type="email"
+            name="from_email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <textarea name="message" placeholder="Message" required />
+        <br></br>
+        <input className="contactSubmitButton" type="submit" value="Send" />
+      </form>
+    </div>
+  );
+};
+
+export default Contact;
