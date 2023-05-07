@@ -181,3 +181,81 @@ nav {
   font-size: 20px;
   font-weight: 300;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://i.imgur.com/oxF3Vdf.gif");
+  text-align: center;
+  color: var(--white);
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+::placeholder {
+  color: #5e5e5e;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #dadada;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #dadada;
+}
+
+.contact h1 {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.textinput {
+  font-size: 20px;
+  border: solid 1px var(--natten-light);
+  background-color: var(--black);
+  margin: 10px;
+  width: 240px;
+  height: 22px;
+  color: #dadada;
+  padding: 5px;
+}
+
+.textinput:focus {
+  outline: 0;
+}
+
+.contact textarea {
+  font-size: 20px;
+  border: solid 1px var(--natten-light);
+  background-color: var(--black);
+  margin: 10px;
+  width: 510px;
+  height: 168px;
+  resize: none;
+  color: #dadada;
+  padding: 5px;
+}
+
+.contact textarea:focus {
+  outline: 0;
+}
+
+.contactSubmitButton {
+  font-size: 20px;
+  border: solid 1px var(--natten-light);
+  background-color: var(--black);
+  margin: 10px;
+  width: 200px;
+  height: 46px;
+  color: #dadada;
+  transition: ease-in-out 0.09s;
+}
+
+.contactSubmitButton:hover {
+  background-color: rgba(253, 255, 247, 0.3);
+}
