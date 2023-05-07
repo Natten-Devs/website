@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
 
 :root {
   --white: #fdfff7;
@@ -12,8 +12,8 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
 #root {
@@ -39,17 +39,13 @@ nav {
   height: 80px;
   width: 100%;
   padding-top: 10px;
-  /* background-color: var(--black); */
 
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   transition: top 0.5s;
-}
-
-nav.hidden {
-  top: -80px;
+  transition: transform 0.2s ease;
 }
 
 .navBarLogo {
@@ -89,12 +85,99 @@ nav.hidden {
   background-color: rgba(253, 255, 247, 0.3);
 }
 
+.navBarScrolled {
+  transform: translateY(-100%);
+  transition: 0.5s;
+}
+
+.navBarBlackBG {
+  transform: translateY(0%);
+  transition: transform 0.2s ease;
+  background-color: var(--black);
+}
+
+.opening {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opening h1 {
+  color: var(--white);
+  font-size: 40px;
+}
+
+.opening a {
+  margin-top: 20px;
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+
+  width: max-content;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.opening a:before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 4px;
+  width: 0;
+  background-color: var(--white);
+  border-radius: 50px;
+  transition: width 0.3s ease;
+}
+
+.opening a:hover:before {
+  width: 100%;
+}
+
 .howWeWork {
-  height: 50vh;
-  background-color: var(--natten-light);
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .howWeWork h1 {
   font-size: 50px;
+  font-weight: 500;
   color: var(--black);
+  text-align: center;
+  margin: 40px;
+}
+
+.howWeWork .card {
+  padding-left: 15vw;
+  padding-right: 15vw;
+
+  display: flex;
+  flex-direction: wrap;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.howWeWork img {
+  max-height: 30%;
+  max-width: 30%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.howWeWork .text {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.howWeWork .text h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.howWeWork .text p {
+  font-size: 20px;
+  font-weight: 300;
 }
