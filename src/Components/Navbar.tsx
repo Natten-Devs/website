@@ -1,4 +1,4 @@
-import logo from "../assets/logo.png";
+import logo from "../assets/natten logo large dark.gif";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {

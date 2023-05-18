@@ -33,6 +33,7 @@ body {
 }
 
 nav {
+  background-color: var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,12 +47,12 @@ nav {
   z-index: 100;
   transition: top 0.5s;
   transition: transform 0.2s ease;
+  overflow: hidden;
 }
 
 .navBarLogo {
   margin-left: 20px;
-  height: 70px;
-  width: 140px;
+  width: 10%;
 }
 
 .navBarLinks {
@@ -258,4 +259,23 @@ nav {
 
 .contactSubmitButton:hover {
   background-color: rgba(253, 255, 247, 0.3);
+}
+
+footer {
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerLogo {
+  width: 100%;
+}
+
+.footerLink {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  text-decoration: underline;
 }
