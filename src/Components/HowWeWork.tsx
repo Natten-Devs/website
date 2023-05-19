@@ -1,4 +1,7 @@
-import placeHolderImage from "../assets/place-holder.png";
+import clientEngagementImage from "../assets/1.png";
+import projectPlanningImage from "../assets/2.png";
+import developmentProcessImage from "../assets/3.png";
+import qualityAssuranceImage from "../assets/4.png";
 
 const HowWeWork = () => {
   return (
@@ -6,7 +9,7 @@ const HowWeWork = () => {
       <h1>How We Work</h1>
 
       <div className="card">
-        <img src={placeHolderImage}></img>
+        <img src={clientEngagementImage}></img>
         <div className="text">
           <h2>Client Engagement</h2>
           <p>
@@ -28,11 +31,11 @@ const HowWeWork = () => {
             milestones, and estimating the size of the project.
           </p>
         </div>
-        <img src={placeHolderImage}></img>
+        <img src={projectPlanningImage}></img>
       </div>
 
       <div className="card">
-        <img src={placeHolderImage}></img>
+        <img src={developmentProcessImage}></img>
         <div className="text">
           <h2>Development Process</h2>
           <p>
@@ -54,7 +57,7 @@ const HowWeWork = () => {
             process to identify and resolve any issues before delivery.
           </p>
         </div>
-        <img src={placeHolderImage}></img>
+        <img src={qualityAssuranceImage}></img>
       </div>
     </div>
   );

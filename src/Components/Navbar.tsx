@@ -1,4 +1,4 @@
-import logo from "../assets/natten logo large dark.gif";
+import logo from "../assets/natten logo large light.svg";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
         <a href="index">Blog</a>
         <a href="index">Products</a>
       </div>
-      <button className="navBarButton">Contact Us</button>
+      <a href="#contactSection"><button className="navBarButton">Contact Us</button></a>
     </nav>
   );
 };

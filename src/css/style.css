@@ -1,10 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
 :root {
   --white: #fdfff7;
   --black: #000000;
-  --natten-light: #fdfff7;
-  --natten-dark: #272635;
+  --red: #b84a62;
+  --green: #20a39e;
+  --yellow: #e3b23c;
 
   --normal-font-size: 16px;
 }
@@ -12,7 +14,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Rubik", sans-serif;
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -27,19 +29,21 @@ body {
 }
 
 .opening {
-  background-image: url("https://i.imgur.com/oxF3Vdf.gif");
-  height: 75vh;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--black);
+  margin-top: 80px;
+  height: 30vh;
   text-align: center;
 }
 
 nav {
-  background-color: var(--black);
+  background-color: var(--white);
+  border-bottom: solid 1px var(--black);
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
   width: 100%;
-  padding-top: 10px;
 
   position: fixed;
   top: 0;
@@ -62,7 +66,7 @@ nav {
 .navBarLinks a {
   position: relative;
   text-decoration: none;
-  color: var(--white);
+  color: var(--black);
   margin-left: 15px;
   margin-right: 15px;
 }
@@ -78,12 +82,13 @@ nav {
   font-size: 18px;
 
   background-color: transparent;
-  border: 2px solid var(--white);
-  color: var(--white);
+  border: 2px solid var(--black);
+  color: var(--black);
 }
 
 .navBarButton:hover {
-  background-color: rgba(253, 255, 247, 0.3);
+  cursor: pointer;
+  background-color: #f0f0f0;
 }
 
 .navBarScrolled {
@@ -94,7 +99,7 @@ nav {
 .navBarBlackBG {
   transform: translateY(0%);
   transition: transform 0.2s ease;
-  background-color: var(--black);
+  background-color: var(--white);
 }
 
 .opening {
@@ -105,13 +110,13 @@ nav {
 }
 
 .opening h1 {
-  color: var(--white);
+  color: var(--black);
   font-size: 40px;
 }
 
 .opening a {
   margin-top: 20px;
-  color: var(--white);
+  color: var(--black);
   font-size: 20px;
   font-weight: 300;
   text-decoration: none;
@@ -127,7 +132,8 @@ nav {
   bottom: -2px;
   height: 4px;
   width: 0;
-  background-color: var(--white);
+  background-color: var(--black);
+
   border-radius: 50px;
   transition: width 0.3s ease;
 }
@@ -144,7 +150,7 @@ nav {
 }
 
 .howWeWork h1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 500;
   color: var(--black);
   text-align: center;
@@ -158,7 +164,7 @@ nav {
   display: flex;
   flex-direction: wrap;
   align-items: center;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 .howWeWork img {
@@ -188,10 +194,9 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("https://i.imgur.com/oxF3Vdf.gif");
+  background-color: var(--white);
   text-align: center;
-  color: var(--white);
-  padding-top: 80px;
+  color: var(--black);
   padding-bottom: 60px;
 }
 
@@ -212,17 +217,18 @@ nav {
 
 .contact h1 {
   font-size: 40px;
+  font-weight: 500;
   padding-bottom: 20px;
 }
 
 .textinput {
   font-size: 20px;
-  border: solid 1px var(--natten-light);
-  background-color: var(--black);
+  border: solid 1px var(--black);
+  background-color: var(--white);
   margin: 10px;
   width: 240px;
   height: 22px;
-  color: #dadada;
+  color: var(--black);
   padding: 5px;
 }
 
@@ -232,13 +238,13 @@ nav {
 
 .contact textarea {
   font-size: 20px;
-  border: solid 1px var(--natten-light);
-  background-color: var(--black);
+  border: solid 1px var(--black);
+  background-color: var(--white);
   margin: 10px;
   width: 510px;
   height: 168px;
   resize: none;
-  color: #dadada;
+  color: var(--black);
   padding: 5px;
 }
 
@@ -248,23 +254,27 @@ nav {
 
 .contactSubmitButton {
   font-size: 20px;
-  border: solid 1px var(--natten-light);
-  background-color: var(--black);
+  border: solid 1px var(--black);
+  background-color: var(--white);
   margin: 10px;
   width: 200px;
   height: 46px;
-  color: #dadada;
+  color: var(--black);
   transition: ease-in-out 0.09s;
 }
 
 .contactSubmitButton:hover {
-  background-color: rgba(253, 255, 247, 0.3);
+  cursor: pointer;
+  width: 180px;
 }
 
 footer {
+  border-top: solid 1px var(--black);
   background-color: var(--white);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footerLogo {
@@ -279,3 +289,35 @@ footer {
 .footerLink:hover {
   text-decoration: underline;
 }
+
+.followText {
+  font-size: 22px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.socials i {
+  color: var(--black);
+}
+
+footer div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#nameInput:focus {
+  border: 1px solid var(--red);
+}
+
+#emailInput:focus {
+  border: 1px solid var(--yellow);
+}
+
+#messageInput:focus {
+  border: 1px solid var(--green);
+}
+
