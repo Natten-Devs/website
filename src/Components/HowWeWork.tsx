@@ -5,7 +5,7 @@ import qualityAssuranceImage from "../assets/4.png";
 
 const HowWeWork = () => {
   return (
-    <div className="howWeWork">
+    <div className="siteSection">
       <h1>How We Work</h1>
 
       <div className="card">
@@ -21,7 +21,7 @@ const HowWeWork = () => {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card card2">
         <div className="text">
           <h2>Project Planning</h2>
           <p>
@@ -48,7 +48,7 @@ const HowWeWork = () => {
         </div>
       </div>
 
-      <div className="card">
+      <div className="card card2">
         <div className="text">
           <h2>Quality Assurance</h2>
           <p>
