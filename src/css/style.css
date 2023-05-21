@@ -156,8 +156,8 @@ nav {
 }
 
 .siteSection img {
-  max-height: 20%;
-  max-width: 20%;
+  max-height: 30%;
+  max-width: 30%;
   object-fit: cover;
   flex-shrink: 0;
 }
