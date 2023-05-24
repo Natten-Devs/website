@@ -620,3 +620,42 @@ svg {
   }
 }
 
+.tagContainer {
+  margin-top: 85px;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  height: 20vh;
+  outline: 1px red dotted;
+}
+
+.tags {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 40vw;
+  flex-wrap: wrap;
+  outline: 1px red dotted;
+}
+
+.tagItemContainer {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  text-align: center;
+  border: 1px var(--black) solid;
+  border-radius: 1vh;
+  margin: 1vh;
+  padding: 1vh;
+  width: fit-content;
+  height: 3vh;
+  outline: 1px red dotted;
+}
+
+.postContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 80vh;
+}
