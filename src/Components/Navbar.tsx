@@ -1,6 +1,7 @@
 import logo from "../assets/natten logo large light.svg";
 import { useEffect, useState } from "react";
 import FancyContactButton from "./FancyContactButton";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -38,10 +39,10 @@ const Navbar = () => {
     >
       <img src={logo} className="navBarLogo"></img>
       <div className="navBarLinks">
-        <a id="link1" href="index">
+        <a id="link1" href="home">
           Home
         </a>
-        <a id="link2" href="index">
+        <a id="link2" href="about">
           About
         </a>
         <a id="link3" href="index">
