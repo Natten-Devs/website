@@ -1,7 +1,7 @@
-import clientEngagementImage from "../assets/1.png";
-import projectPlanningImage from "../assets/2.png";
-import developmentProcessImage from "../assets/3.png";
-import qualityAssuranceImage from "../assets/4.png";
+import clientEngagementImage from "../../assets/1.png";
+import projectPlanningImage from "../../assets/2.png";
+import developmentProcessImage from "../../assets/3.png";
+import qualityAssuranceImage from "../../assets/4.png";
 
 const HowWeWork = () => {
   return (

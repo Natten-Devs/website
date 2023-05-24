@@ -1,4 +1,4 @@
-import OpeningAnimation from "./OpeningAnimation";
+import OpeningAnimation from "../OpeningAnimation";
 
 import AboutSlide from "./AboutSlide";
 import { useState } from "react";

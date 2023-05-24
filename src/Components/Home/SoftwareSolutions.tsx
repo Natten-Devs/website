@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-import aiIcon from "../assets/Artificial Intelligence Icon.svg";
-import blockchainIcon from "../assets/Blockchain Icon.svg";
-import cloudComputingIcon from "../assets/Cloud Computing Icon.svg";
-import dbmIcon from "../assets/Database Management Icon.svg";
-import mobileIcon from "../assets/Mobile App Icon.svg";
-import webappIcon from "../assets/Webapp Icon.svg";
+import aiIcon from "../../assets/Artificial Intelligence Icon.svg";
+import blockchainIcon from "../../assets/Blockchain Icon.svg";
+import cloudComputingIcon from "../../assets/Cloud Computing Icon.svg";
+import dbmIcon from "../../assets/Database Management Icon.svg";
+import mobileIcon from "../../assets/Mobile App Icon.svg";
+import webappIcon from "../../assets/Webapp Icon.svg";
 import SoftwareSolutionCard from "./SoftwareSolutionCard";
 
 const SoftwareSolutions = () => {

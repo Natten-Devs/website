@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
-import WhoWeAre from "./Components/WhoWeAre";
-import AboutOpening from "./Components/AboutOpening";
-import OurTeam from "./Components/OurTeam";
-import Partners from "./Components/Partners";
+import WhoWeAre from "./Components/About/WhoWeAre";
+import AboutOpening from "./Components/About/AboutOpening";
+import OurTeam from "./Components/About/OurTeam";
+import Partners from "./Components/About/Partners";
 
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
