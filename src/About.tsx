@@ -42,6 +42,7 @@ const About = () => {
       <WhoWeAre />
       <OurTeam />
       <Partners />
+      <Contact title="Questions?" />
       <Footer />
 
       <>
