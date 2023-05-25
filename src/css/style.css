@@ -620,13 +620,19 @@ svg {
   }
 }
 
+.blogPage {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 .tagContainer {
-  margin-top: 85px;
   display: flex;
   justify-content: center;
   place-items: center;
-  height: 20vh;
-  outline: 1px red dotted;
+  margin-top: 80px;
+  height:20%;
 }
 
 .tags {
@@ -635,7 +641,6 @@ svg {
   place-items: center;
   width: 40vw;
   flex-wrap: wrap;
-  outline: 1px red dotted;
 }
 
 .tagItemContainer {
@@ -643,13 +648,33 @@ svg {
   justify-content: center;
   place-items: center;
   text-align: center;
-  border: 1px var(--black) solid;
+  border: 1px var(--red) solid;
+  background-color: rgba(184, 74, 98, 0.5);
   border-radius: 1vh;
   margin: 1vh;
   padding: 1vh;
   width: fit-content;
   height: 3vh;
-  outline: 1px red dotted;
+  transition: all 350ms ease;
+}
+
+.tagItemContainer h1{
+  font-size: 1.5vh;
+}
+
+.tagItemContainer:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.tagCountBox {
+  border: 1px var(--black) solid;
+  background-color: var(--white);
+  margin-left: 1vh;
+  padding-left: .5vh;
+  padding-right: .5vh;
+  border-radius: 1vh;
+  box-sizing: content-box;
 }
 
 .postContainer{
@@ -657,5 +682,43 @@ svg {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 80vh;
+}
+
+.postItemContainer {
+  border: 1px #00100b solid;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.5);
+  margin: 1rem;
+  padding: 1rem;
+  transition: all 350ms ease;
+}
+
+.postItemContainer img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  aspect-ratio: 1/1;
+}
+
+.postItemContainer:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+
+.blogPosts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 50%;
+}
+
+.postTags {
+  font-size: .75rem;
+}
+
+@media screen and (max-width: 768px) {
+  /* Apply styles for screens with a maximum width of 768px (adjust this value as needed) */
+  .blogPosts {
+    grid-template-columns: 1fr; /* Display one item per row */
+    width: 100%;
+  }
 }

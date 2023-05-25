@@ -9,7 +9,8 @@ const TagItem: React.FC<TagItemProps> = ({ title, count }) => {
     return (
         <>
         <div className="tagItemContainer">
-            <p># {title} {count}</p>
+            <h1># {title} </h1>
+            <h1 className="tagCountBox"> {count}</h1>
         </div>
         </>
     );

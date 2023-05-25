@@ -6,12 +6,12 @@ import Footer from "./Components/Footer";
 
 const App = () => {
     return (
-        <>
-        <Navbar />
-        <Tags />
-        <Posts />
-        <Footer />
-        </>
+        <div className="blogPage">
+            <Navbar />
+            <Tags />
+            <Posts />
+            <Footer />
+        </div>
     );
 };
 
