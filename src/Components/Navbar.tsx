@@ -45,7 +45,7 @@ const Navbar = () => {
         <a id="link2" href="about">
           About
         </a>
-        <a id="link3" href="index">
+        <a id="link3" href="/blog">
           Blog
         </a>
         <a id="link4" href="index">

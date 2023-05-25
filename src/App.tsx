@@ -5,6 +5,7 @@ import {
 } from "../node_modules/react-router-dom/dist/index";
 
 import Home from "./Home";
+import Blog from "./Blog";
 import About from "./About";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/blog" exact element={<Blog />}></Route>
       </Routes>
     </BrowserRouter>
   );
