@@ -1,9 +1,13 @@
 import "../css/opening.css";
 
-const OpeningAnimation = () => {
+interface OAProps {
+  top: string
+}
+
+const OpeningAnimation: React.FC<OAProps> = (props) => {
   return (
     <>
-      <div className="backwrap gradient">
+      <div className={`backwrap gradient ${props.top}`}>
         <div className="back-shapes">
           <span
             className="floating circle"

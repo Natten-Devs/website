@@ -1,7 +1,11 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const Contact = () => {
+interface CProps {
+  title: string
+}
+
+const Contact: React.FC<CProps> = (props) => {
   const form = useRef<HTMLFormElement>(null);
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
@@ -37,7 +41,7 @@ const Contact = () => {
 
   return (
     <div className="contact">
-      <h1 id="contactSection">Tell Us About Your Project!</h1>
+      <h1 id="contactSection">{props.title}</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div>
           <input

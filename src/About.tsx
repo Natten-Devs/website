@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
 
 import Navbar from "./Components/Navbar";
-import Opening from "./Components/Home/Opening";
-import HowWeWork from "./Components/Home/HowWeWork";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import WhoWeAre from "./Components/About/WhoWeAre";
-import SoftwareSolutions from "./Components/Home/SoftwareSolutions";
+import AboutOpening from "./Components/About/AboutOpening";
+import OurTeam from "./Components/About/OurTeam";
+import Partners from "./Components/About/Partners";
 
 import "react-tooltip/dist/react-tooltip.css";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 
-const App = () => {
+const About = () => {
   const [backToTopBtnAvailable, setBackToTopBtnAvailable] = useState(false);
 
   let currentScrollPosition = window.scrollY;
@@ -38,11 +38,11 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <Opening />
+      <AboutOpening />
       <WhoWeAre />
-      <SoftwareSolutions />
-      <HowWeWork />
-      <Contact title="Tell Us About Your Project!" />
+      <OurTeam />
+      <Partners />
+      <Contact title="Questions?" />
       <Footer />
 
       <>
@@ -64,4 +64,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default About;

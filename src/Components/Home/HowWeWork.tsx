@@ -1,7 +1,7 @@
-import clientEngagementImage from "../assets/1.png";
-import projectPlanningImage from "../assets/2.png";
-import developmentProcessImage from "../assets/3.png";
-import qualityAssuranceImage from "../assets/4.png";
+import clientEngagementImage from "../../assets/1.png";
+import projectPlanningImage from "../../assets/2.png";
+import developmentProcessImage from "../../assets/3.png";
+import qualityAssuranceImage from "../../assets/4.png";
 
 const HowWeWork = () => {
   return (
@@ -13,7 +13,7 @@ const HowWeWork = () => {
         <div className="text">
           <h2>Client Engagement</h2>
           <p>
-            Our first step is to engage with you, the client, to understand your
+            Our first step is to partner with you, the client, to understand your
             vision and requirements for your software project. We may provide a
             quote or set up a meeting with you to discuss your needs and goals
             in more detail.
