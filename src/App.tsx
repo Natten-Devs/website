@@ -7,6 +7,7 @@ import {
 import Home from "./Home";
 import Blog from "./Blog";
 import About from "./About";
+import Careers from "./Careers";
 
 const App = () => {
   return (
@@ -15,7 +16,8 @@ const App = () => {
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
         <Route path="/about" element={<About />}></Route>
-        <Route path="/blog" exact element={<Blog />}></Route>
+        <Route path="/blog" element={<Blog />}></Route>
+        <Route path="/careers" element={<Careers />}></Route>
       </Routes>
     </BrowserRouter>
   );
