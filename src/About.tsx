@@ -54,7 +54,7 @@ const About = () => {
             data-tooltip-content="back to top"
             data-tooltip-place="left"
           >
-            &#129045;
+            ↑
           </button>
         )}
       </>

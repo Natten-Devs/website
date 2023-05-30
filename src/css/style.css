@@ -33,7 +33,6 @@ body {
 .opening {
   background-color: var(--white);
   border-bottom: 1px solid var(--black);
-  height: 30vh;
   text-align: center;
   height: 100%;
 }
@@ -874,6 +873,116 @@ svg {
 
 .jobCard a:hover {
   background-color: #efefef;
+}
+
+.descriptionPage {
+  border-bottom: 1px solid var(--black);
+  margin-top: 81px;
+}
+
+.descriptionPage h1 {
+  text-align: center;
+}
+
+.descriptionPage h2 {
+  padding-top: 30px;
+}
+
+.descriptionPage ul {
+  padding-left: 20px;
+}
+
+.descriptionText li {
+  font-size: 20px;
+}
+
+.descriptionText p {
+  font-size: 20px;
+}
+
+.descriptionText {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.applySection {
+  padding-top: 30px;
+}
+
+.applySection button {
+  border: 1px solid var(--black);
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+  background-color: var(--white);
+  transition: 0.1s linear;
+}
+
+.applySection button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.notAllowedCursor {
+  background-color: #eeeeee;
+}
+
+.notAllowedCursor:hover {
+  cursor: not-allowed;
+}
+
+.appForm > * {
+  font-size: 20px;
+}
+
+.appForm input,
+select,
+textarea {
+  margin-bottom: 20px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.appForm textarea {
+  resize: none;
+}
+
+.appForm label {
+  padding-bottom: 2px;
+  font-weight: 500;
+}
+
+#appsubmit {
+  margin-bottom: 50px;
+  width: 150px;
+  height: 50px;
+}
+
+#appsubmit:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.appForm {
+  display: flex;
+  flex-direction: column;
+  padding-right: 20vw;
+  padding-left: 20vw;
+}
+
+.terms {
+  padding-right: 20vw;
+  padding-left: 20vw;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.terms h3 {
+  padding-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
