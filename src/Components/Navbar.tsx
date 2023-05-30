@@ -1,7 +1,6 @@
 import logo from "../assets/natten logo large light.svg";
 import { useEffect, useState } from "react";
 import FancyContactButton from "./FancyContactButton";
-import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -26,10 +25,10 @@ const Navbar = () => {
   };
 
   const toggleMenu = () => {
-    window.scrollTo({ top: 0});
+    window.scrollTo({ top: 0 });
     setUserScrolledUp(false);
     setToggledContent(!toggledContent);
-  }
+  };
 
   return (
     <nav
@@ -39,10 +38,10 @@ const Navbar = () => {
     >
       <img src={logo} className="navBarLogo"></img>
       <div className="navBarLinks">
-        <a id="link1" href="home">
+        <a id="link1" href="/home">
           Home
         </a>
-        <a id="link2" href="about">
+        <a id="link2" href="/about">
           About
         </a>
         <a id="link3" href="/blog">
@@ -57,11 +56,7 @@ const Navbar = () => {
       </a>
 
       <button onClick={toggleMenu} className="dropDownBtn none">
-        <i
-          id="dropDownIcon"
-          className="bi bi-list"
-          aria-hidden="true"
-        ></i>
+        <i id="dropDownIcon" className="bi bi-list" aria-hidden="true"></i>
       </button>
       {toggledContent && (
         <div className="dropDownContent">

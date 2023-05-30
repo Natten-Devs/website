@@ -28,7 +28,7 @@ const Footer = () => {
           Careers
         </a>
         <br></br>
-        <a href="#" className="followText link" id="link3">
+        <a href="/legal" className="followText link" id="link3">
           Legal
         </a>
       </div>

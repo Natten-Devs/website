@@ -6,10 +6,9 @@ const CareersOpening = () => {
   return (
     <div className="opening careers">
       <AboutSlide
-        header="Join the Team"
-        paragraph="we are looking for talented individuals to expand"
+        header="Ignite Your Career in Software Development"
+        paragraph="join our team of innovators and shape the future of technology"
       />
-
       <OpeningAnimation top="fourtytop" />
     </div>
   );
