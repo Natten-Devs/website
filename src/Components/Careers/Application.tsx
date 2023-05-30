@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import TimeZoneOptions from "./TimeZoneOptions";
 
 interface AProps {
   job: string;
@@ -20,7 +21,7 @@ const Application: React.FC<AProps> = (props) => {
         "service_jda4vjv",
         "template_4f9mfen",
         form.current,
-        "zjXJSCfTtJDKebygn"
+        "lzzUXSyeUjhEP14bp"
       )
       .then(
         (result: emailjs.EmailJSResponseStatus) => {
@@ -78,6 +79,11 @@ const Application: React.FC<AProps> = (props) => {
           placeholder="123-456-7890"
           required
         ></input>
+
+        <label>Time Zone</label>
+        <select id="tz" name="tz" required>
+          <TimeZoneOptions />
+        </select>
 
         <label>Education Status</label>
         <select id="edu" name="edu" required>

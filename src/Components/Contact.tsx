@@ -21,7 +21,7 @@ const Contact: React.FC<CProps> = (props) => {
         "service_jda4vjv",
         "template_87sk7kl",
         form.current,
-        "zjXJSCfTtJDKebygn"
+        "lzzUXSyeUjhEP14bp"
       )
       .then(
         (result: emailjs.EmailJSResponseStatus) => {
