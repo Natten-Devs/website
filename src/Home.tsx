@@ -42,7 +42,7 @@ const App = () => {
       <WhoWeAre />
       <SoftwareSolutions />
       <HowWeWork />
-      <Contact title="Tell Us About Your Project!" />
+      <Contact border={true} title="Tell Us About Your Project!" />
       <Footer />
 
       <>

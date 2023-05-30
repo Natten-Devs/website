@@ -51,7 +51,7 @@ const Navbar = () => {
           Products
         </a>
       </div>
-      <a className="contactBtnLink" href="#contactSection">
+      <a className="contactBtnLink" href="/contact">
         <FancyContactButton />
       </a>
 
@@ -60,19 +60,19 @@ const Navbar = () => {
       </button>
       {toggledContent && (
         <div className="dropDownContent">
-          <a id="link1" className="bigLink" href="index">
+          <a id="link1" className="bigLink" href="/home">
             Home
           </a>
-          <a id="link2" className="bigLink" href="index">
+          <a id="link2" className="bigLink" href="/about">
             About
           </a>
-          <a id="link3" className="bigLink" href="index">
+          <a id="link3" className="bigLink" href="/blog">
             Blog
           </a>
           <a id="link4" className="bigLink" href="index">
             Products
           </a>
-          <a href="#contactSection">
+          <a href="/contact">
             <FancyContactButton />
           </a>
         </div>

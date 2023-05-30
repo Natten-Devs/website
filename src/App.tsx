@@ -10,6 +10,7 @@ import About from "./About";
 import Careers from "./Careers";
 import NotFound from "./NotFound";
 import Legal from "./Legal";
+import Contact from "./Contact";
 import MA_DescriptionPage from "./Components/Careers/MA_DescriptionPage";
 import FSE_DescriptionPage from "./Components/Careers/FSE_DescriptionPage";
 import CAS_DescriptionPage from "./Components/Careers/CAS_DescriptionPage";
@@ -24,6 +25,8 @@ const App = () => {
         <Route path="/about" element={<About />}></Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/careers" element={<Careers />}></Route>
+        <Route path="/legal" element={<Legal />}></Route>
+        <Route path="/contact" element={<Contact />}></Route>
 
         <Route
           path="/careers/market-analyst"
@@ -37,8 +40,6 @@ const App = () => {
           path="/careers/client-acquisition-specialist"
           element={<CAS_DescriptionPage />}
         ></Route>
-
-        <Route path="/legal" element={<Legal />}></Route>
       </Routes>
     </BrowserRouter>
   );

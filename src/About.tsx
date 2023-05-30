@@ -42,7 +42,7 @@ const About = () => {
       <WhoWeAre />
       <OurTeam />
       <Partners />
-      <Contact title="Questions?" />
+      <Contact border={true} title="Questions?" />
       <Footer />
 
       <>

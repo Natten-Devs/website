@@ -185,6 +185,9 @@ nav {
   text-align: center;
   color: var(--black);
   padding-bottom: 60px;
+}
+
+.borderBottom {
   border-bottom: 1px solid var(--black);
 }
 
