@@ -5,7 +5,7 @@ import TumbleWeeds from "./assets/tumbleweed.gif";
 const NotFound = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
 
       <div className="opening">
         <h1>Hmmm... seems empty here</h1>
@@ -15,7 +15,7 @@ const NotFound = () => {
         <img className="notFound" src={TumbleWeeds}></img>
       </div>
 
-      <Footer />
+      <Footer style="light" />
     </>
   );
 };

@@ -42,8 +42,8 @@ const About = () => {
       <WhoWeAre />
       <OurTeam />
       <Partners />
-      <Contact border={true} title="Questions?" />
-      <Footer />
+      <Contact style="light" border={true} title="Questions?" />
+      <Footer style="light" />
 
       <>
         {backToTopBtnAvailable && (

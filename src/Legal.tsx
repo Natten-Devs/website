@@ -6,7 +6,7 @@ import OpeningAnimation from "./Components/OpeningAnimation";
 const Legal = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
       <div className="opening slideshow">
         <AboutSlide
           header="Legal"
@@ -96,7 +96,7 @@ const Legal = () => {
           terms before submitting your application.
         </p>
       </div>
-      <Footer />
+      <Footer style="light" />
     </>
   );
 };

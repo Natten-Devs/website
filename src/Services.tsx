@@ -19,7 +19,7 @@ const Services = () => {
 
       <ServiceSolutions />
 
-      <Contact title="Let's Connect" style="dark" />
+      <Contact border={false} title="Let's Connect" style="dark" />
 
       <Footer style="dark" />
     </div>

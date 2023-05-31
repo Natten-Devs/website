@@ -6,7 +6,7 @@ import JobCard from "./Components/Careers/JobCard";
 const Careers = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
       <CareersOpening />
 
       <div className="siteSection">
@@ -31,7 +31,7 @@ const Careers = () => {
         </div>
       </div>
 
-      <Footer />
+      <Footer style="light" />
     </>
   );
 };

@@ -6,14 +6,18 @@ import OpeningAnimation from "./Components/OpeningAnimation";
 const Contact = () => {
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
 
       <div className="opening">
-        <ContactForm border={false} title="What Can We Do for You?" />
+        <ContactForm
+          style="light"
+          border={false}
+          title="What Can We Do for You?"
+        />
         <OpeningAnimation top="eightytop" />
       </div>
 
-      <Footer />
+      <Footer style="light" />
     </>
   );
 };

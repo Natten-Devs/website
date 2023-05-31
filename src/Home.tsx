@@ -42,8 +42,12 @@ const App = () => {
       <WhoWeAre />
       <SoftwareSolutions />
       <HowWeWork />
-      <Contact border={true} title="Tell Us About Your Project!" />
-      <Footer />
+      <Contact
+        style="light"
+        border={true}
+        title="Tell Us About Your Project!"
+      />
+      <Footer style="light" />
 
       <>
         {backToTopBtnAvailable && (
