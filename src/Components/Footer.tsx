@@ -36,11 +36,11 @@ const Footer: React.FC<FProps> = (props) => {
         </div>
       </div>
       <div>
-        <a href="#" className="followText link" id="link2">
+        <a href="/careers" className="followText link" id="link2">
           Careers
         </a>
         <br></br>
-        <a href="#" className="followText link" id="link3">
+        <a href="/legal" className="followText link" id="link3">
           Legal
         </a>
       </div>

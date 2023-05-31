@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 interface CProps {
   title: string;
   style: string;
+  border: boolean;
 }
 
 const Contact: React.FC<CProps> = (props) => {
@@ -21,7 +22,7 @@ const Contact: React.FC<CProps> = (props) => {
         "service_jda4vjv",
         "template_87sk7kl",
         form.current,
-        "zjXJSCfTtJDKebygn"
+        "lzzUXSyeUjhEP14bp"
       )
       .then(
         (result: emailjs.EmailJSResponseStatus) => {
@@ -41,7 +42,7 @@ const Contact: React.FC<CProps> = (props) => {
   };
 
   return (
-    <div className={`contact ${props.style === "light" ? "" : "darkMode"}`}>
+    <div className={`contact ${props.style === "light" ? "" : "darkMode"} ${props.border ? "borderBottom" : ""}`}>
       <h1 id="contactSection">{props.title}</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div>

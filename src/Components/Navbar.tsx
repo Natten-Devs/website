@@ -46,20 +46,20 @@ const Navbar: React.FC<NProps> = (props) => {
         className="navBarLogo"
       ></img>
       <div className="navBarLinks">
-        <a id="link1" href="home">
+        <a id="link1" href="/home">
           Home
         </a>
-        <a id="link2" href="about">
+        <a id="link2" href="/about">
           About
         </a>
-        <a id="link3" href="blog">
+        <a id="link3" href="/blog">
           Blog
         </a>
         <a id="link4" href="services">
           Services
         </a>
       </div>
-      <a className="contactBtnLink" href="#contactSection">
+      <a className="contactBtnLink" href="/contact">
         <FancyContactButton />
       </a>
 
@@ -68,19 +68,19 @@ const Navbar: React.FC<NProps> = (props) => {
       </button>
       {toggledContent && (
         <div className="dropDownContent">
-          <a id="link1" className="bigLink" href="home">
+          <a id="link1" className="bigLink" href="/home">
             Home
           </a>
-          <a id="link2" className="bigLink" href="about">
+          <a id="link2" className="bigLink" href="/about">
             About
           </a>
-          <a id="link3" className="bigLink" href="blog">
+          <a id="link3" className="bigLink" href="/blog">
             Blog
           </a>
-          <a id="link4" className="bigLink" href="services">
+          <a id="link4" className="bigLink" href="/services">
             Services
           </a>
-          <a href="#contactSection">
+          <a href="/contact">
             <FancyContactButton />
           </a>
         </div>
