@@ -2,7 +2,8 @@ import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 interface CProps {
-  title: string
+  title: string;
+  style: string;
 }
 
 const Contact: React.FC<CProps> = (props) => {
@@ -40,7 +41,7 @@ const Contact: React.FC<CProps> = (props) => {
   };
 
   return (
-    <div className="contact">
+    <div className={`contact ${props.style === "light" ? "" : "darkMode"}`}>
       <h1 id="contactSection">{props.title}</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div>

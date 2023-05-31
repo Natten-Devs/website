@@ -1,16 +1,28 @@
-import logo from "../assets/natten logo large light.svg";
+import logoLight from "../assets/natten logo large light.svg";
+import logoDark from "../assets/natten logo large dark.svg";
 
-const Footer = () => {
+interface FProps {
+  style: string;
+}
+
+const Footer: React.FC<FProps> = (props) => {
   return (
-    <footer>
+    <footer className={`${props.style === "light" ? "" : "darkMode"}`}>
       <div>
-        <img src={logo} className="footerLogo"></img>
+        <img
+          src={`${props.style === "light" ? logoLight : logoDark}`}
+          className="footerLogo"
+        ></img>
         <a href="mailto:contact@natten.net" className="footerLink" id="link1">
           contact@natten.net
         </a>
       </div>
       <div>
-        <p className="followText">Follow Us!</p>
+        <p
+          className={`followText ${props.style === "light" ? "" : "darkText"}`}
+        >
+          Follow Us!
+        </p>
         <div className="socials">
           <a href="#">
             <i className="bi bi-twitter"></i>
@@ -24,9 +36,13 @@ const Footer = () => {
         </div>
       </div>
       <div>
-        <a href="#" className="followText link" id="link2">Careers</a>
+        <a href="#" className="followText link" id="link2">
+          Careers
+        </a>
         <br></br>
-        <a href="#" className="followText link" id="link3">Legal</a>
+        <a href="#" className="followText link" id="link3">
+          Legal
+        </a>
       </div>
     </footer>
   );
