@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
       <AboutOpening />
       <WhoWeAre />
       <OurTeam />

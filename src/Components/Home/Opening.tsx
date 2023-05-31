@@ -5,8 +5,8 @@ const Opening = () => {
     <>
       <div className="opening">
         <h1>Software Development Tailored to Your Unique Needs</h1>
-        <a className="openinglink" href="#softwareSolutions">
-          see how technology can bring ideas to life ↴
+        <a className="openinglink" href="/services">
+          see how technology can bring ideas to life ➝
         </a>
       </div>
 

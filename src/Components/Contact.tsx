@@ -3,6 +3,7 @@ import emailjs from "@emailjs/browser";
 
 interface CProps {
   title: string;
+  style: string;
   border: boolean;
 }
 
@@ -41,7 +42,7 @@ const Contact: React.FC<CProps> = (props) => {
   };
 
   return (
-    <div className={`contact ${props.border ? "borderBottom" : ""}`}>
+    <div className={`contact ${props.style === "light" ? "" : "darkMode"} ${props.border ? "borderBottom" : ""}`}>
       <h1 id="contactSection">{props.title}</h1>
       <form ref={form} onSubmit={sendEmail}>
         <div>

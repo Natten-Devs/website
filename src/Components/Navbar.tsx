@@ -1,8 +1,13 @@
-import logo from "../assets/natten logo large light.svg";
+import logoLight from "../assets/natten logo large light.svg";
+import logoDark from "../assets/natten logo large dark.svg";
 import { useEffect, useState } from "react";
 import FancyContactButton from "./FancyContactButton";
 
-const Navbar = () => {
+interface NProps {
+  style: string;
+}
+
+const Navbar: React.FC<NProps> = (props) => {
   const [isNavVisible, setIsNavVisible] = useState(true);
   const [userScrolledUp, setUserScrolledUp] = useState(false);
   const [toggledContent, setToggledContent] = useState(false);
@@ -34,9 +39,12 @@ const Navbar = () => {
     <nav
       className={`${isNavVisible ? "" : "navBarScrolled"} ${
         userScrolledUp ? "navBarBlackBG" : ""
-      }`}
+      } ${props.style === "light" ? "" : "darkMode"}`}
     >
-      <img src={logo} className="navBarLogo"></img>
+      <img
+        src={`${props.style === "light" ? logoLight : logoDark}`}
+        className="navBarLogo"
+      ></img>
       <div className="navBarLinks">
         <a id="link1" href="/home">
           Home
@@ -47,8 +55,8 @@ const Navbar = () => {
         <a id="link3" href="/blog">
           Blog
         </a>
-        <a id="link4" href="index">
-          Products
+        <a id="link4" href="services">
+          Services
         </a>
       </div>
       <a className="contactBtnLink" href="/contact">
@@ -69,8 +77,8 @@ const Navbar = () => {
           <a id="link3" className="bigLink" href="/blog">
             Blog
           </a>
-          <a id="link4" className="bigLink" href="index">
-            Products
+          <a id="link4" className="bigLink" href="/services">
+            Services
           </a>
           <a href="/contact">
             <FancyContactButton />

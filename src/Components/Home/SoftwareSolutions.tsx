@@ -41,7 +41,7 @@ const SoftwareSolutions = () => {
         <SoftwareSolutionCard
           cName={`selected2 ` + (selectiveDiv === 4 ? "selected" : "")}
           onClick={() => handleClick(4)}
-          title="Database Management Systems"
+          title="Database Management"
           img={dbmIcon}
         />
         <SoftwareSolutionCard

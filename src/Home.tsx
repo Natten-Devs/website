@@ -37,7 +37,7 @@ const App = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar style="light" />
       <Opening />
       <WhoWeAre />
       <SoftwareSolutions />
