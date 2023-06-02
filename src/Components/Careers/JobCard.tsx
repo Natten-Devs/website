@@ -16,7 +16,7 @@ const JobCard: React.FC<JCProps> = (props) => {
           <p>{props.location}</p>
         </div>
       </div>
-      <div>
+      <div className="appButton">
         <a href={`/careers/${props.jobId}`} className="applyBtn">
           Apply
         </a>

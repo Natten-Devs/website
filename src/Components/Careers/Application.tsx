@@ -80,7 +80,7 @@ const Application: React.FC<AProps> = (props) => {
           required
         ></input>
 
-        <label>Time Zone</label>
+        <label>Country</label>
         <select id="tz" name="tz" required>
           <TimeZoneOptions />
         </select>

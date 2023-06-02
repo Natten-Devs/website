@@ -24,7 +24,7 @@ const Footer: React.FC<FProps> = (props) => {
           Follow Us!
         </p>
         <div className="socials">
-          <a href="#">
+          <a href="https://twitter.com/nattenupdates">
             <i className="bi bi-twitter"></i>
           </a>
           <a href="https://instagram.com/nattendevs">

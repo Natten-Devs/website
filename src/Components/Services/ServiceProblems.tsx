@@ -3,7 +3,7 @@ import SPC from "./ServiceProblemCard";
 const ServiceProblems = () => {
   return (
     <div className="siteSection dark">
-      <h1 className="serviceHeader">Using Softare to Solve Your Problems</h1>
+      <h1 className="serviceHeader">Using Software to Solve Your Problems</h1>
 
       <div className="serviceProblemContainer">
         <SPC
@@ -12,7 +12,7 @@ const ServiceProblems = () => {
         />
         <SPC
           h2="> Online Presence"
-          p="In today's digital age, having an online presence is a must for a business to excell. We recognize this significance by creating dynamic websites, user-friendly interfaces, and mobile applications for consumers."
+          p="In today's digital age, having an online presence is a must for a business to excel. We recognize this significance by creating dynamic websites, user-friendly interfaces, and mobile applications for consumers."
         />
         <SPC
           h2="> Data Analytics"

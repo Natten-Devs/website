@@ -9,7 +9,7 @@ const WhoWeAre = () => {
             <h2>About</h2>
             <p>
               Established in 2023, our team is a{" "}
-              <a className="link" href="/about#Partners">
+              <a className="link" href="/about#Partners" id="link1">
                 trusted
               </a>{" "}
               partner based in the heart of Central Florida. With a focus on
@@ -27,7 +27,7 @@ const WhoWeAre = () => {
             <h2>Our Mission</h2>
             <p>
               At Natten, we believe in the philosophy of partnerships. We create
-              alliances between our techical expertise and your visionary goals
+              alliances between our technical expertise and your visionary goals
               because we understand that true success lies in teamwork. Our{" "}
               <a className="link" id="link2" href="/about#Team">
                 dedicated team

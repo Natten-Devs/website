@@ -18,6 +18,13 @@ const SoftwareSolutions = () => {
   return (
     <div className="siteSection" id="softwareSolutions">
       <h1>Software Solutions</h1>
+      <p className="learnMoreText">
+        Learn about these technologies on our{" "}
+        <a id="link3" className="link" href="/services">
+          services page
+        </a>
+        .
+      </p>
 
       <div className="infoHolder">
         <SoftwareSolutionCard
