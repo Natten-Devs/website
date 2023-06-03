@@ -1,5 +1,5 @@
 import {
-  BrowserRouter,
+  HashRouter,
   Route,
   Routes,
 } from "../node_modules/react-router-dom/dist/index";
@@ -18,7 +18,7 @@ import CAS_DescriptionPage from "./Components/Careers/CAS_DescriptionPage";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="*" element={<NotFound />}></Route>
         <Route path="/" element={<Home />}></Route>
@@ -43,7 +43,7 @@ const App = () => {
           element={<CAS_DescriptionPage />}
         ></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 
