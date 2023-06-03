@@ -1,17 +1,21 @@
 {
   "name": "natten-website",
-  "private": true,
-  "version": "0.0.0",
+  "private": false,
+  "homepage": "https://natten.net",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-do": "^1.1.6",
     "react-dom": "^18.2.0",

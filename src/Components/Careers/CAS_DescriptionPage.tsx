@@ -8,7 +8,7 @@ const CAS_DescriptionPage = () => {
   const [toggleApplication, setToggleApplication] = useState(false);
   return (
     <>
-      <Navbar />
+      <Navbar style="dark" />
       <div className="descriptionPage">
         <div className="descriptionText">
           <h1>Client Acquisition Specialist</h1>
@@ -75,7 +75,7 @@ const CAS_DescriptionPage = () => {
       </div>
 
       {toggleApplication && <Application job="Client Acquisition Specialist" />}
-      <Footer />
+      <Footer style="dark" />
     </>
   );
 };

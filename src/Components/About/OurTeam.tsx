@@ -1,7 +1,6 @@
 import TeamCard from "./TeamCard";
 import Image_CarsonFrankovich from "../../assets/team_photos/CarsonFrankovich.png";
 import Image_DanielPalma from "../../assets/team_photos/DanielPalma.png";
-import Image_Placeholder from "../../assets/team_photos/placeholder.png";
 
 const OurTeam = () => {
   return (

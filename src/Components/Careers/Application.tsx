@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs, { EmailJSResponseStatus } from "@emailjs/browser";
 import TimeZoneOptions from "./TimeZoneOptions";
 
 interface AProps {
@@ -12,26 +12,26 @@ const Application: React.FC<AProps> = (props) => {
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    const isValid = Object.values(form.current).every(
-      (value) => value.length > 0
-    );
+    const converted: string | HTMLFormElement = form.current as
+      | string
+      | HTMLFormElement;
 
     emailjs
       .sendForm(
         "service_jda4vjv",
         "template_4f9mfen",
-        form.current,
+        converted,
         "lzzUXSyeUjhEP14bp"
       )
       .then(
-        (result: emailjs.EmailJSResponseStatus) => {
+        (result: EmailJSResponseStatus) => {
           console.log(result.text);
-          if (form.current !== null) {
+          if (form.current instanceof HTMLFormElement) {
             form.current.reset();
           }
           alert("Message sent successfully.");
         },
-        (error: emailjs.Error) => {
+        (error: EmailJSResponseStatus) => {
           console.log(error.text);
           alert(
             "There was an error sending your message. Please try again later."

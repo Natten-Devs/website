@@ -47,7 +47,7 @@ const App = () => {
         border={true}
         title="Tell Us About Your Project!"
       />
-      <Footer style="dark" />
+      <Footer style="light" />
 
       <>
         {backToTopBtnAvailable && (

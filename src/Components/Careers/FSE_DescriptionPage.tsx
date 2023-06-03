@@ -9,7 +9,7 @@ const FSE_DescriptionPage = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar style="dark" />
       <div className="descriptionPage">
         <div className="descriptionText">
           <h1>Full-Stack Engineer</h1>
@@ -84,7 +84,7 @@ const FSE_DescriptionPage = () => {
         </div>
       </div>
       {toggleApplication && <Application job="Full-Stack Engineer" />}
-      <Footer />
+      <Footer style="dark" />
     </>
   );
 };

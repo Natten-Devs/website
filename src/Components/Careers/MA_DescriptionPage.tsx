@@ -8,7 +8,7 @@ const MA_DescriptionPage = () => {
   const [toggleApplication, setToggleApplication] = useState(false);
   return (
     <>
-      <Navbar />
+      <Navbar style="dark" />
       <div className="descriptionPage">
         <div className="descriptionText">
           <h1>Market Analyst</h1>
@@ -81,7 +81,7 @@ const MA_DescriptionPage = () => {
         </div>
       </div>
       {toggleApplication && <Application job="Market Analyst" />}
-      <Footer />
+      <Footer style="dark" />
     </>
   );
 };
