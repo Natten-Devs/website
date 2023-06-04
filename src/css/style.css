@@ -377,6 +377,12 @@ footer div {
   transition: ease-in 0.15s;
 }
 
+.backToTopBtnDark {
+  color: var(--white);
+  background-color: var(--black);
+  border: 1px solid var(--white);
+}
+
 .backToTopBtn:hover {
   transform: scale(1.1);
 }
