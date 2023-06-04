@@ -1,5 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600&display=swap");
 
 :root {
   --white: #fdfff7;
@@ -21,7 +21,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Manrope", sans-serif;
   max-width: 100%;
 }
 
@@ -869,7 +869,7 @@ svg {
   background-image: url("../assets/markerbg.png");
   background-size: 100% 100%;
   width: 700px;
-  height: 200px;
+  height: 220px;
   margin-bottom: 50px;
 }
 
@@ -1410,7 +1410,7 @@ textarea {
   .left,
   .right {
     margin: unset;
-    padding-bottom: 120px;
+    padding-bottom: 30vw;
     margin-bottom: 50px;
   }
 
