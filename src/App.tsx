@@ -25,16 +25,13 @@ const App = () => {
         <Route path="/legal" component={Legal}></Route>
         <Route path="/contact" component={Contact}></Route>
 
+        <Route path="/market-analyst" component={MA_DescriptionPage}></Route>
         <Route
-          path="/careers/market-analyst"
-          component={MA_DescriptionPage}
-        ></Route>
-        <Route
-          path="/careers/full-stack-engineer"
+          path="/full-stack-engineer"
           component={FSE_DescriptionPage}
         ></Route>
         <Route
-          path="/careers/client-acquisition-specialist"
+          path="/client-acquisition-specialist"
           component={CAS_DescriptionPage}
         ></Route>
 
